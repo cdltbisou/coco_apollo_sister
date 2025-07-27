@@ -3,9 +3,9 @@ import Apollo from "../assets/apollo.jpg";
 
 export const Homepage = () => {
   return (
-    <main className="grid grid-cols-12 gap-24 mx-48">
-      <div className="h-screen border border-red-500 col-start-1 col-span-full grid grid-cols-subgrid grid-rows-[2fr_1fr]">
-        <h1 className="col-start-2 col-span-6 text-[224px] italic leading-[218px] self-end z-1 text-main-700">
+    <main className="grid grid-cols-12 gap-24">
+      <div className="h-screen col-start-1 col-span-full grid grid-cols-subgrid grid-rows-[2fr_1fr]">
+        <h1 className="col-start-2 col-span-6 text-[224px] italic leading-[218px] self-end z-1 text-gray-800">
           <span className="">liste de</span>
           <br />
           <span className="">naissance</span>
@@ -19,14 +19,20 @@ export const Homepage = () => {
           </ul>
         </nav>
         <Image
-          className="fixed top-0 right-0 bottom-0 w-[46vw] z-0"
+          className="sticky top-0 col-start-8 col-span-5 h-screen w-[46vw] z-0 row-span-full"
           alt="couoco"
           src={Apollo}
           width={2268}
           height={4032}
         />
       </div>
-      voir la liste
+      
+      <div>catégories</div>
+<div className="gird">
+  <div className="border border-red-600">
+    card
+  </div>
+</div>
     </main>
   );
 };
