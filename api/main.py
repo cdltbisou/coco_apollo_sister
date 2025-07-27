@@ -22,3 +22,5 @@ def read_root() -> dict[str, str]:
 
 
 handler = app
+
+# commentaire dans python
