@@ -19,3 +19,6 @@ async def flavicon() -> FileResponse:
 def read_root() -> dict[str, str]:
     """Root endpoint that returns a simple greeting."""
     return {"Hello": "World"}
+
+
+handler = app
