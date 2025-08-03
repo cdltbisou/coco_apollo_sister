@@ -1,108 +1,147 @@
-@import url("https://use.typekit.net/ics7eqt.css");
-@import "tailwindcss";
+@import url('https://use.typekit.net/ics7eqt.css');
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 
-  /* fonts */
+    /* fonts */
 
-  --font-ivy: ivypresto-display, serif;
-  --font-neue: neue-haas-grotesk-display, sans-serif;
+    --font-ivy: ivypresto-display, serif;
+    --font-neue: neue-haas-grotesk-display, sans-serif;
 }
 
 @theme {
-  /* colors */
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+    /* colors */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
 
-  /* CSS Variables generated from Kigen.design */
-  --color-main-50: oklch(0.9537765933001195 0.030835298912443812 149.8177729810722);
-  --color-main-100: oklch(0.8817947978043759 0.0828029868632455 149.44580521429953);
-  --color-main-200: oklch(0.783163792442453 0.0733627650254815 149.0082876876802);
-  --color-main-300: oklch(0.6953064213423328 0.06650045350382776 149.54296559965138);
-  --color-main-400: oklch(0.6052459394413005 0.05871869295515486 149.5421692645887);
-  --color-main-500: oklch(0.5091615733778209 0.048834759027359974 149.78110377142372);
-  --color-main-600: oklch(0.4282521278071353 0.04198852196638382 149.6018259972676);
-  --color-main-700: oklch(0.35757302583035244 0.036621636870943365 149.04531660762333);
-  --color-main-800: oklch(0.2772998893187304 0.026822337322874482 149.01213008241623);
-  --color-main-900: oklch(0.16703465854818195 0.017542251368624338 152.0152955622878);
+    /* CSS Variables generated from Kigen.design */
+    --color-main-50: oklch(
+        0.9537765933001195 0.030835298912443812 149.8177729810722
+    );
+    --color-main-100: oklch(
+        0.8817947978043759 0.0828029868632455 149.44580521429953
+    );
+    --color-main-200: oklch(
+        0.783163792442453 0.0733627650254815 149.0082876876802
+    );
+    --color-main-300: oklch(
+        0.6953064213423328 0.06650045350382776 149.54296559965138
+    );
+    --color-main-400: oklch(
+        0.6052459394413005 0.05871869295515486 149.5421692645887
+    );
+    --color-main-500: oklch(
+        0.5091615733778209 0.048834759027359974 149.78110377142372
+    );
+    --color-main-600: oklch(
+        0.4282521278071353 0.04198852196638382 149.6018259972676
+    );
+    --color-main-700: oklch(
+        0.35757302583035244 0.036621636870943365 149.04531660762333
+    );
+    --color-main-800: oklch(
+        0.2772998893187304 0.026822337322874482 149.01213008241623
+    );
+    --color-main-900: oklch(
+        0.16703465854818195 0.017542251368624338 152.0152955622878
+    );
 
-  --color-accent-50: oklch(0.9575652969725231 0.007546744185622839 17.288322724792955);
-  --color-accent-100: oklch(0.9018005068926197 0.01885376568166229 21.589101174628833);
-  --color-accent-200: oklch(0.8175177880028636 0.03945359776440777 23.93756663236195);
-  --color-accent-300: oklch(0.7371582067464524 0.06308272165915531 24.95967448340714);
-  --color-accent-400: oklch(0.6425998784947299 0.09077671968821523 26.83070725464329);
-  --color-accent-500: oklch(0.5001472958374997 0.09552078065734307 26.95176672133323);
-  --color-accent-600: oklch(0.4091286732057614 0.08442955352514347 26.389348279259778);
-  --color-accent-700: oklch(0.32087784354763005 0.06695923926060617 26.7833709539508);
-  --color-accent-800: oklch(0.22805388841725313 0.049519678610067376 25.602297905452637);
-  --color-accent-900: oklch(0.13437283788779095 0.02922834525802864 21.756394111825117);
+    --color-accent-50: oklch(
+        0.9575652969725231 0.007546744185622839 17.288322724792955
+    );
+    --color-accent-100: oklch(
+        0.9018005068926197 0.01885376568166229 21.589101174628833
+    );
+    --color-accent-200: oklch(
+        0.8175177880028636 0.03945359776440777 23.93756663236195
+    );
+    --color-accent-300: oklch(
+        0.7371582067464524 0.06308272165915531 24.95967448340714
+    );
+    --color-accent-400: oklch(
+        0.6425998784947299 0.09077671968821523 26.83070725464329
+    );
+    --color-accent-500: oklch(
+        0.5001472958374997 0.09552078065734307 26.95176672133323
+    );
+    --color-accent-600: oklch(
+        0.4091286732057614 0.08442955352514347 26.389348279259778
+    );
+    --color-accent-700: oklch(
+        0.32087784354763005 0.06695923926060617 26.7833709539508
+    );
+    --color-accent-800: oklch(
+        0.22805388841725313 0.049519678610067376 25.602297905452637
+    );
+    --color-accent-900: oklch(
+        0.13437283788779095 0.02922834525802864 21.756394111825117
+    );
 
-  --color-gray-50: oklch(0.9581468870268093 0 none);
-  --color-gray-100: oklch(0.8914313457035393 0 none);
-  --color-gray-200: oklch(0.7920743408035346 0 none);
-  --color-gray-300: oklch(0.699260733081613 0 none);
-  --color-gray-400: oklch(0.5998708056221468 0 none);
-  --color-gray-500: oklch(0.478359140788322 0 none);
-  --color-gray-600: oklch(0.3904208434597007 0 none);
-  --color-gray-700: oklch(0.328969281337264 0 none);
-  --color-gray-800: oklch(0.24353474225450714 0 none);
-  --color-gray-900: oklch(0.1543399938085494 0 none);
+    --color-gray-50: oklch(0.9581468870268093 0 none);
+    --color-gray-100: oklch(0.8914313457035393 0 none);
+    --color-gray-200: oklch(0.7920743408035346 0 none);
+    --color-gray-300: oklch(0.699260733081613 0 none);
+    --color-gray-400: oklch(0.5998708056221468 0 none);
+    --color-gray-500: oklch(0.478359140788322 0 none);
+    --color-gray-600: oklch(0.3904208434597007 0 none);
+    --color-gray-700: oklch(0.328969281337264 0 none);
+    --color-gray-800: oklch(0.24353474225450714 0 none);
+    --color-gray-900: oklch(0.1543399938085494 0 none);
 
-  /* fonts */
-  --font-body: var(--font-neue);
-  --font-heading: var(--font-ivy);
-  --font-mono: var(--font-ivy);
+    /* fonts */
+    --font-body: var(--font-neue);
+    --font-heading: var(--font-ivy);
+    --font-mono: var(--font-ivy);
 
-  /* sizes */
-  --text-4: 0.25rem;
-  --text-8: 0.5rem;
-  --text-10: 0.625rem;
-  --text-12: 0.75rem;
-  --text-16: 1rem;
-  --text-20: 1.25rem;
-  --text-24: 1.5rem;
-  --text-32: 2rem;
-  --text-40: 2.5rem;
-  --text-48: 3rem;
-  --text-56: 3.5rem;
-  --text-64: 4rem;
-  --text-72: 4.5rem;
-  --text-80: 5rem;
-  --text-88: 5.5rem;
+    /* sizes */
+    --text-4: 0.25rem;
+    --text-8: 0.5rem;
+    --text-10: 0.625rem;
+    --text-12: 0.75rem;
+    --text-16: 1rem;
+    --text-20: 1.25rem;
+    --text-24: 1.5rem;
+    --text-32: 2rem;
+    --text-40: 2.5rem;
+    --text-48: 3rem;
+    --text-56: 3.5rem;
+    --text-64: 4rem;
+    --text-72: 4.5rem;
+    --text-80: 5rem;
+    --text-88: 5.5rem;
 
-  /* spacing */
-  --spacing-2: 0.125rem;
-  --spacing-4: 0.25rem;
-  --spacing-8: 0.5rem;
-  --spacing-10: 0.625rem;
-  --spacing-12: 0.75rem;
-  --spacing-16: 1rem;
-  --spacing-20: 1.25rem;
-  --spacing-24: 1.5rem;
-  --spacing-32: 2rem;
-  --spacing-40: 2.5rem;
-  --spacing-48: 3rem;
-  --spacing-56: 3.5rem;
-  --spacing-64: 4rem;
-  --spacing-72: 4.5rem;
-  --spacing-80: 5rem;
-  --spacing-88: 5.5rem;
-
+    /* spacing */
+    --spacing-2: 0.125rem;
+    --spacing-4: 0.25rem;
+    --spacing-8: 0.5rem;
+    --spacing-10: 0.625rem;
+    --spacing-12: 0.75rem;
+    --spacing-16: 1rem;
+    --spacing-20: 1.25rem;
+    --spacing-24: 1.5rem;
+    --spacing-32: 2rem;
+    --spacing-40: 2.5rem;
+    --spacing-48: 3rem;
+    --spacing-56: 3.5rem;
+    --spacing-64: 4rem;
+    --spacing-72: 4.5rem;
+    --spacing-80: 5rem;
+    --spacing-88: 5.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--color-gray-800);
-  font-family: var(--font-body);
+    background: var(--background);
+    color: var(--color-gray-800);
+    font-family: var(--font-body);
 }
 
 h1,
@@ -111,6 +150,5 @@ h3,
 h4,
 h5,
 h5 {
-  font-family: var(--font-heading);
-
+    font-family: var(--font-heading);
 }
