@@ -1,7 +1,16 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'kidobebe.com',
+        port: '',
+        pathname: '/cdn/shop/**',
+      },
+    ],
+  },
+}
 
-export default nextConfig;
+export default nextConfig
