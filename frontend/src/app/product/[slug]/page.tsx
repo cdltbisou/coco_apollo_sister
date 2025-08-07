@@ -2,18 +2,16 @@ import { LoadingGrid } from '@/app/components/loaders/LoadingGrid'
 import { Suspense } from 'react'
 
 export default async function ProductPage({
-    params,
+  params,
 }: {
-    params: Promise<{ slug: string }>
+  params: Promise<{ slug: string }>
 }) {
-    const { slug } = await params
+  const { slug } = await params
 
-    return (
-        <div>
-            {slug}
-            <Suspense fallback={<LoadingGrid />}>
-                single product: {slug}
-            </Suspense>
-        </div>
-    )
+  return (
+    <div>
+      {slug}
+      <Suspense fallback={<LoadingGrid />}>single product: {slug}</Suspense>
+    </div>
+  )
 }

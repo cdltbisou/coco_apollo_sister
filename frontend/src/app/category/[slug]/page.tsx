@@ -4,18 +4,18 @@ import { GiftFilter } from '@/app/types'
 import { Suspense } from 'react'
 
 export default async function CategoryPage({
-    params,
+  params,
 }: {
-    params: Promise<{ slug: string }>
+  params: Promise<{ slug: string }>
 }) {
-    const { slug } = await params
+  const { slug } = await params
 
-    return (
-        <div>
-            {slug}
-            <Suspense fallback={<LoadingGrid />}>
-                <GiftsGrid filter={{ [GiftFilter.Category]: slug }} />
-            </Suspense>
-        </div>
-    )
+  return (
+    <div>
+      {slug}
+      <Suspense fallback={<LoadingGrid />}>
+        <GiftsGrid filter={{ [GiftFilter.Category]: slug }} />
+      </Suspense>
+    </div>
+  )
 }
